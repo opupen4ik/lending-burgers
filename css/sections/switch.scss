@@ -1,0 +1,60 @@
+.radio {
+  position: fixed;
+  top: 90px;
+  right: 40px;
+}
+
+.switch-list__item {
+  margin-bottom: 5px;
+}
+
+.switch-list__link {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative;
+}
+
+.switch-list__link::before,
+.switch-list__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.switch-list__link::before {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+}
+
+.switch-list__link::after {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: .3s;
+}
+
+.switch-list__link:hover::after {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+}
+
+.switch-list__item.active .switch-list__link::after {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+}
+
+.switch-active {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+}

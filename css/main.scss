@@ -1,0 +1,22 @@
+//colors
+$orange: #e35028;
+$yellow: #f9b43b;
+$red: #e45028;
+$blakc: #2f3234;
+
+// layout
+@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/fonts";
+
+// sections
+@import "sections/hello";
+@import "sections/about";
+@import "sections/burgers";
+@import "sections/team";
+@import "sections/menu";
+@import "sections/reviews";
+@import "sections/order";
+@import "sections/map";
+@import "sections/switch";
+@import "sections/modal_window";

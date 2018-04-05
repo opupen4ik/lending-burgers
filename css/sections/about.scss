@@ -1,0 +1,58 @@
+.about {
+	background: url(../img/bg/about-bg.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.about .container {
+	position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.about .section__title {
+	margin-bottom: 80px;
+}
+
+.about__list {
+  font-size: 0;
+}
+
+.about__item {
+	display: inline-block;
+	vertical-align: top;
+  width: 33.3%;
+  padding: 0 10px;
+	font-size: 14px;
+}
+
+.about__icon {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.about__icon-pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.about__title {
+	font-size: 24px;
+  font-family: 'lifehackmedium';
+  color: #2f3234;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 1.8;
+}

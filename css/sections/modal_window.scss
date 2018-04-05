@@ -1,0 +1,69 @@
+// full-review
+
+.full-review {
+  padding: 25px 20px;
+  position: relative;
+  width: 460px;
+  border-radius: 5px;
+}
+
+.full-review__close {
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: .7;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.full-review__close img {
+  width: 100%;
+  height: 100%;
+}
+
+.full-review__title {
+  font-family: 'gagalinregular';
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.full-review__content {
+  font-size: 14px;
+  font-family: 'ubuntulight';
+}
+
+
+// success error
+
+.status-popup {
+  width: 240px;
+}
+
+.status-popup__inner {
+  padding: 20px;
+  text-align: center;
+}
+
+.status-popup__message {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.error-message {
+  color: #e35028;
+}
+
+
+// fancybox
+
+.fancybox-bg {
+  background: rgba(#2f3234, .92) !important;
+}
+
+.fancybox-close-small {
+  display: none !important;
+}

@@ -1,0 +1,76 @@
+.menu {
+	background: url(../img/bg/menu-bg.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.menu__title {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.menu-accordion {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.menu-accordion__item {
+	float: left;
+	height: 100%;
+	transition: 300ms;
+
+	&.active {
+		.menu-accordion__trigger-text {
+			color: $yellow;
+		}
+	}
+}
+
+.menu-accordion__trigger {
+	height: 100%;
+	display: block;
+	width: 80px;
+	background-size: cover;
+	background-position: center center;
+  background-repeat: no-repeat;
+	position: relative;
+	float: left;
+	text-decoration: none;
+}
+
+.menu-accordion__trigger-text {
+	font-family: 'gagalinregular';
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	height: 80px;
+	margin-top: -40px;
+	white-space: nowrap;
+	width: 650px;
+	color: #fff;
+	left: -275px;
+	// left: 50%;
+	// margin-left: -312px;
+	transform: rotate(-90deg);
+	text-align: center;
+}
+
+.menu-accordion__content {
+	background: rgba(47, 50, 52, .93);
+	width: 0;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+}
+
+.menu-accordion__text {
+	font-family: 'ubuntulight';
+  font-size: 14px;
+  color: #fff;
+  padding: 60px 30px;
+  width: 550px;
+  line-height: 1.8;
+}

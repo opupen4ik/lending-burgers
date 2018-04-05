@@ -1,0 +1,56 @@
+.footer {
+  background: url(../img/bg/footer.jpg) center bottom no-repeat;
+  height: 60px;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.footer__left,
+.footer__right {
+  float: left;
+  width: 50%;
+}
+
+.footer__right {
+  text-align: right;
+  padding-top: 9px;
+}
+
+.footer__address {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer__phone {
+  color: $orange;
+  font-family: 'ubuntubold';
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.socials {
+  position: relative;
+  top: 50%;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.socials__link {
+  opacity: .3;
+  transition: .3s;
+  display: block;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.socials__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}

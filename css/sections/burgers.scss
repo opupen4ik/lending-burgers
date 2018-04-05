@@ -1,0 +1,256 @@
+.burgers {
+	background: #f9b43b; /* Old browsers */
+	background: -moz-linear-gradient(top, #f9b43b 0%, #eb8c38 33%, #eb8c38 67%, #f9b33b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f9b43b 0%,#eb8c38 33%,#eb8c38 67%,#f9b33b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f9b43b 0%,#eb8c38 33%,#eb8c38 67%,#f9b33b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b33b',GradientType=0 ); /* IE6-9 */
+}
+
+.burgers__container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	height: 100%;
+}
+
+.burgers__container .container {
+	height: 100%;
+}
+
+.burgers-slider-wrap {
+  position: relative;
+	height: 100%;
+	height: 100%;
+}
+
+.burgers-slider__controls {
+	z-index: 5;
+}
+
+.burgers-slider {
+	white-space: nowrap;
+	font-size: 0;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	z-index: 1;
+}
+
+.burgers-slider__overflow {
+	width: 940px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.burgers-slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.burgers-slider__btn_next {
+  transform: rotate(-90deg);
+	right: -45px;
+
+}
+
+.burgers-slider__btn_prev {
+  transform: rotate(90deg);
+	left: -42px;
+}
+
+.burgers-slider__btn_prev:hover .burgers-slider__arrow {
+  width: 35px;
+}
+
+.burgers-slider__btn_next:hover .burgers-slider__arrow {
+  width: 35px;
+}
+
+.burgers-slider__arrow {
+  display: block;
+  height: 15px;
+  width: 27px;
+  transition: .3s;
+}
+
+.burgers-slider__item {
+  position: relative;
+  padding-bottom: 85px;
+	width: 940px;
+	height: 100%;
+	display: inline-block;
+}
+
+.ingredients {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: rgba(227,80,40,.4);
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  transition: .3s;
+  z-index: 5;
+
+	&:hover {
+		background-color: rgb(227, 80, 40);
+
+		.ingredients__dropdown {
+    left: 100%;
+    opacity: 1;
+		font-size: 14px;
+}
+	}
+}
+
+.ingredients__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.ingredients__burger-icon {
+  width: 46px;
+  height: 50px;
+  display: block;
+	overflow: hidden;
+}
+
+.ingredients__icon-text {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'gagalinregular';
+}
+
+.ingredients__dropdown {
+  padding: 20px;
+  background: rgba(255,255,255,.9);
+  position: absolute;
+  width: 270px;
+  border-radius: 7px;
+  left: -9999px;
+  opacity: 0;
+  transition: opacity .3s;
+  z-index: 5;
+}
+
+.ingredients__dropdown::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  left: -29px;
+}
+
+.ingredients__table {
+  width: 100%;
+}
+
+.ingredients__table-cell {
+  vertical-align: middle;
+  padding: 8px 0;
+}
+
+.ingredients__table-icon-image {
+  max-width: 45px;
+  max-height: 50px;
+  display: inline-block;
+}
+
+.burger-weight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+}
+
+.burger-weight__measure {
+  background: url(img/icons/kkal.svg) 50% no-repeat;
+  width: 65px;
+  height: 60px;
+  position: relative;
+}
+
+.burger-weight__amount {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'gagalinregular';
+}
+
+.burger-weight__title {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-family: 'gagalinregular';
+}
+
+.burgers-slider__left {
+  float: left;
+  width: 50%;
+  padding-top: 95px;
+}
+
+.burgers-slider__pic {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.burgers-slider__right {
+  float: right;
+  width: 50%;
+}
+
+.burgers-slider__right .section__title {
+  line-height: 1.1em;
+	white-space: normal;
+}
+
+.burgers-slider__text {
+  color: #fff;
+  margin-bottom: 18px;
+	white-space: normal;
+}
+
+.text-block p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.burgers-slider__price {
+  display: inline-block;
+  vertical-align: middle;
+  color: $orange;
+  font-family: 'gagalinregular';
+}
+
+.burgers-slider__price-amount,
+.burgers-slider__price-measure {
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1;
+}
+
+.burgers-slider__price-amount {
+  font-size: 72px;
+}
+
+.burgers-slider__price-measure {
+  font-size: 30px;
+}
+
+.burgers-slider__buy {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 32px;
+}

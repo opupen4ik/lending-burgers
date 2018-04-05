@@ -1,0 +1,102 @@
+.team {
+	background: url(../img/bg/team-bg.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.team__section {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	background: rgba(#2f3234, .93%);
+	padding: 0 95px 0 75px;
+}
+
+.team .section__title {
+	margin-top: 17%;
+	margin-bottom: 14%;
+}
+
+.team-accordion {
+  padding-left: 17px;
+}
+
+.team-accordion__item {
+  margin-bottom: 40px;
+}
+
+.team-accordion__trigger {
+	color: #fff;
+	font-size: 14px;
+	font-family: 'gagalinregular';
+	text-decoration: none;
+	position: relative;
+	display: block;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: -19px;
+		top: 5px;
+		width: 0;
+		height: 0;
+		border-top: 7px solid $yellow;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 0 solid transparent;
+		transform: rotate(0deg);
+		transition: .3s;
+	}
+}
+
+	.team-accordion__item.active .team-accordion__trigger {
+		color: $yellow;
+
+		&::before {
+			transform: rotate(-180deg);
+		}
+}
+
+.team-accordion__content {
+	display: none;
+	padding-top: 14px;
+}
+
+.team-accordion__pic {
+	float: left;
+	text-align: center;
+	width: 30%
+}
+
+.team-accordion__img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+	display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.team-accordion__text {
+	float: left;
+	width: 60%;
+	margin-left: 10%;
+}
+
+.team-accordion__title {
+	font-family: 'ubuntubold';
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 14px;
+}
+
+.team-accordion__text-content {
+	color: #fff;
+	font-size: 14px;
+	font-family: 'ubuntulight';
+}

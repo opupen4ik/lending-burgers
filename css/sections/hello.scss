@@ -1,0 +1,136 @@
+.hello {
+	background: url(../img/bg/hello-bg.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hello .container {
+  position: static;
+}
+
+.header {
+  padding-top: 12px;
+}
+
+.header__left {
+  float: left;
+  width: 30%;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.header__right {
+  float: left;
+  width: 70%;
+  padding-top: 16px;
+}
+
+.nav {
+  width: 82%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav__list {
+  width: 100%;
+}
+
+.nav__item {
+  white-space: nowrap;
+  margin-right: 14px;
+  display: block;
+  float: left;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'ubuntumedium';
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.nav__item:not(:last-child) {
+	&::after{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  margin-left: 14px;
+}
+}
+
+.order-link {
+  width: 15%;
+  vertical-align: middle;
+}
+
+.hello__container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+.hello__left {
+  float: left;
+  width: 50%;
+}
+
+.hello__right {
+  float: left;
+  width: 50%;
+  padding-top: 115px;
+}
+
+.hello__desc {
+	color: #fff;
+  font-size: 65px;
+  font-family: 'lifehackmedium';
+  text-transform: lowercase;
+  line-height: 1em;
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -15px;
+  transition: .3s;
+}
+
+.arrow:hover .pic-arrow {
+  top: -15px;
+  width: 35px;
+  height: 35px;
+}
+
+.arrow__wrapper {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.pic-arrow {
+  width: 30px;
+  height: 30px;
+  transition: .3s;
+  position: relative;
+  top: 0;
+}
